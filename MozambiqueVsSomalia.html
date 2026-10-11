@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mozambique vs Somalia</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  max-width: 650px;
+  background: #101e30;
+  border: 1px solid #2b4059;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px #0008;
+}
+
+.header {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2b4059;
+  color: #a9b8ca;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status {
+  color: #07111f;
+  background: #47d7a0;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 30px 12px;
+}
+
+.flag {
+  font-size: 48px;
+}
+
+.team {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.score {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.winner {
+  color: #47d7a0;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 0 18px 20px;
+}
+
+.box {
+  padding: 15px;
+  background: #16283d;
+  border-radius: 12px;
+}
+
+.label {
+  font-size: 12px;
+  color: #a9b8ca;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 20px;
+  border-top: 1px solid #2b4059;
+}
+
+.section h3 {
+  margin-top: 0;
+}
+
+.player {
+  background: #263044;
+  border: 1px solid #655638;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-name {
+  font-weight: bold;
+}
+
+.muted {
+  color: #a9b8ca;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.rating {
+  margin-left: auto;
+  color: #ffd166;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.goal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #16283d;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.goal-info {
+  flex: 1;
+}
+
+.minute {
+  color: #47d7a0;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 18px;
+  text-align: center;
+  color: #a9b8ca;
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  .score {
+    font-size: 36px;
+  }
+
+  .flag {
+    font-size: 38px;
+  }
+
+  .team {
+    font-size: 15px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <span>FIFA QUALIFICATION</span>
+    <span class="status">FULL TIME</span>
+  </div>
+
+  <div class="scoreboard">
+
+    <div>
+      <div class="flag">🇲🇿</div>
+      <div class="team">Mozambique</div>
+      <div class="winner">WINNER</div>
+    </div>
+
+    <div>
+      <div class="score">2 - 0</div>
+      <div class="muted">FULL TIME</div>
+    </div>
+
+    <div>
+      <div class="flag">🇸🇴</div>
+      <div class="team">Somalia</div>
+    </div>
+
+  </div>
+
+  <div class="details">
+
+    <div class="box">
+      <div class="label">MATCH TIME</div>
+      <div class="value">Oct 15 · 8:30 AM</div>
+      <div class="muted">Mozambique time</div>
+    </div>
+
+    <div class="box">
+      <div class="label">TEAM RANKINGS</div>
+      <div class="value">🇲🇿 Mozambique #98</div>
+      <div class="muted">🇸🇴 Somalia #200 / #201*</div>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <h3>⭐ Player of the Match</h3>
+
+    <div class="player">
+      <div style="font-size:32px">🏆</div>
+
+      <div>
+        <div class="player-name">Stanley Ratifo</div>
+        <div class="muted">Scored 2 goals</div>
+      </div>
+
+      <div class="rating">7.7</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>⚽ Goal Scorers</h3>
+
+    <div class="goal">
+      <div style="font-size:25px">⚽</div>
+      <div class="goal-info">
+        <strong>Stanley Ratifo</strong>
+        <div class="muted">Assist: Dominguês</div>
+      </div>
+      <div class="minute">38'</div>
+    </div>
+
+    <div class="goal">
+      <div style="font-size:25px">⚽</div>
+      <div class="goal-info">
+        <strong>Stanley Ratifo</strong>
+        <div class="muted">Assist: Dominguês</div>
+      </div>
+      <div class="minute">43'</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    FOOTBALL MATCH REPORT · MOZAMBIQUE VS SOMALIA
+  </div>
+
+</div>
+
+</body>
+</html>
